@@ -1,23 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import ProjectGrid from './components/ProjectGrid';
-import ProjectPage from './pages/ProjectPage';
-import Footer from './components/Footer';
-import './App.css'; // For styling
+import ProfileSection from './components/ProfileSection'; // New profile section
+import Footer from './components/Footer'; // Footer component
+import './App.css'; // Import custom styles
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<ProjectGrid />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="app">
+      <ProfileSection />  {/* Profile Section for bio, picture, resume, etc */}
+      <ProjectGrid />      {/* Grid of projects with filters */}
+      <Footer />           {/* Footer */}
+    </div>
   );
 }
 

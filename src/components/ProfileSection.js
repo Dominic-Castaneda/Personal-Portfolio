@@ -15,10 +15,10 @@ const ProfileSection = () => {
         </p>
         <a href="/path-to-resume.pdf" download className="resume-download">Download Resume</a>
         <div className="contact-info">
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/dominic-castaneda-982232292/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} className="contact-icon" />
           </a>
-          <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Dominic-Castaneda" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} className="contact-icon" />
           </a>
         </div>

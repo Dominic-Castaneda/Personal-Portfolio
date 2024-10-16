@@ -1,27 +1,42 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-import projects from '../data/projects'; // Example project data
+import projects from '../data/projects'; // Assume projects data includes category and languages
 
 const ProjectGrid = () => {
-  const [selectedFilter, setSelectedFilter] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedLanguage, setSelectedLanguage] = useState('All');
 
-  const categories = ['All', 'Full Stack Development', 'Game Development', 'AI', 'Automation']; // Example filters
+  const categories = ['All', 'Full Stack Development', 'Game Development', 'AI', 'Automation'];
+  const languages = ['All', 'JavaScript', 'Python', 'Java', 'C#'];
 
-  const handleFilterChange = (e) => {
-    setSelectedFilter(e.target.value);
+  const handleCategoryChange = (e) => {
+    setSelectedCategory(e.target.value);
   };
 
-  const filteredProjects = selectedFilter === 'All'
-    ? projects
-    : projects.filter(project => project.category === selectedFilter);
+  const handleLanguageChange = (e) => {
+    setSelectedLanguage(e.target.value);
+  };
+
+  const filteredProjects = projects.filter((project) => {
+    const categoryMatches = selectedCategory === 'All' || project.category === selectedCategory;
+    const languageMatches = selectedLanguage === 'All' || project.languages.includes(selectedLanguage);
+    return categoryMatches && languageMatches;
+  });
 
   return (
     <div className="project-grid-section">
       <div className="filter-options">
-        <label htmlFor="category-filter">Filter by:</label>
-        <select id="category-filter" value={selectedFilter} onChange={handleFilterChange}>
+        <label htmlFor="category-filter">Category:</label>
+        <select id="category-filter" value={selectedCategory} onChange={handleCategoryChange}>
           {categories.map(category => (
             <option key={category} value={category}>{category}</option>
+          ))}
+        </select>
+
+        <label htmlFor="language-filter">Language:</label>
+        <select id="language-filter" value={selectedLanguage} onChange={handleLanguageChange}>
+          {languages.map(language => (
+            <option key={language} value={language}>{language}</option>
           ))}
         </select>
       </div>

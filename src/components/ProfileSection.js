@@ -5,7 +5,7 @@ const ProfileSection = () => {
   return (
     <div className="profile-section">
       <div className="profile-left">
-        <img src="/images/your-photo.jpg" alt="Dominic Castaneda" className="profile-photo" />
+        <img src="/images/your-photo.png" alt="Dominic Castaneda" className="profile-photo" />
       </div>
       <div className="profile-right">
         <h2>Dominic Castaneda</h2>

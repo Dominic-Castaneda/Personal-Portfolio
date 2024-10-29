@@ -85,6 +85,50 @@ body::-webkit-scrollbar-thumb:hover {
   color: #e0e0e0;
 }
 
+
+/* Get to Know Me Section */
+.get-to-know-me {
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin: 2rem;
+  text-align: center;
+}
+
+.get-to-know-me h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.get-to-know-me p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.pictures-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.get-to-know-me-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.get-to-know-me-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
 /* Project Grid Section */
 .project-grid-section {
   padding: 2rem;

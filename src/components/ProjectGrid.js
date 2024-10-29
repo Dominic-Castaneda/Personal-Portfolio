@@ -6,7 +6,7 @@ const ProjectGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedLanguage, setSelectedLanguage] = useState('All');
 
-  const categories = ['All', 'Full Stack Development', 'Game Development', 'AI', 'Automation'];
+  const categories = ['All', 'Full Stack Development', 'Front End', 'Game Development', 'AI', 'Automation'];
   const languages = ['All', 'JavaScript', 'Python', 'Java', 'C#'];
 
   const handleCategoryChange = (e) => {

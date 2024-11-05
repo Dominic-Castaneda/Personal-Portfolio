@@ -31,6 +31,17 @@ const projects = [
     fullDescription: "An automated card shuffling machine built with Arduino for card games.",
     githubLink: "https://github.com/your-profile/card-shuffler",
     additionalImages: ["/images/card-shuffler.jpg"]
+  },
+  {
+    id: 4,
+    title: "Toy Claw Machine with PLC",
+    description: "description",
+    thumbnail: "/images/Claw-Machine.jpg",
+    category: "Robotic's",
+    languages: ["Ladder Logic"],
+    fullDescription: "An automated card shuffling machine built with Arduino for card games.",
+    githubLink: "https://github.com/your-profile/card-shuffler",
+    additionalImages: [""]
   }
 ];
 

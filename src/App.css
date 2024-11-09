@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Get to Know Me Section */
 .get-to-know-me {
   padding: 2rem;
-  margin-top: 6rem; /* Add this line to create more space above "Get to Know Me" */
+  margin-top: 6rem;
   background-color: #1a1a1a;
   border-radius: 10px;
   margin: 2rem;
@@ -353,25 +353,31 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 480px) {
   .profile-section {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
+  .profile-left,
   .profile-right {
     padding-left: 0;
+    margin-bottom: 1rem;
   }
 
   .pictures-row {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
 
-  .get-to-know-me-image-wrapper {
-    width: 45%;
-    margin-bottom: 1rem;
+  .get-to-know-me-image {
+    width: 100%;
+    height: auto;
   }
 
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    padding: 1rem;
   }
 }

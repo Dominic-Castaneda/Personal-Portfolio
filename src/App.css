@@ -41,6 +41,8 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-items: center;
   margin: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .profile-left {
@@ -85,10 +87,10 @@ body::-webkit-scrollbar-thumb:hover {
   color: #e0e0e0;
 }
 
-
 /* Get to Know Me Section */
 .get-to-know-me {
   padding: 2rem;
+  margin-top: 6rem; /* Add this line to create more space above "Get to Know Me" */
   background-color: #1a1a1a;
   border-radius: 10px;
   margin: 2rem;
@@ -108,14 +110,19 @@ body::-webkit-scrollbar-thumb:hover {
 
 .pictures-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
+.get-to-know-me-image-wrapper {
+  position: relative;
+  text-align: center;
+}
+
 .get-to-know-me-image {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 225px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -127,7 +134,56 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
 }
 
+.image-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
 
+/* Popup Image Modal */
+.image-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.image-popup-overlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-popup-content {
+  position: relative;
+  max-width: 50%;
+  max-height: 70%;
+}
+
+.image-popup-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
 
 /* Project Grid Section */
 .project-grid-section {
@@ -210,6 +266,31 @@ body::-webkit-scrollbar-thumb:hover {
   color: #a0a0a0;
 }
 
+/* Project Progress Bar */
+.project-progress {
+  height: 10px;
+  width: 100%;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.project-progress-bar {
+  height: 100%;
+  background-color: #bb86fc;
+  width: 0%; /* Set dynamically based on project progress */
+  transition: width 0.3s ease-in-out;
+}
+
+.project-progress-percentage {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #bb86fc;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Project Page Pop-Up */
 .project-popup {
   position: fixed;
@@ -266,4 +347,31 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-right {
+    padding-left: 0;
+  }
+
+  .pictures-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .get-to-know-me-image-wrapper {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }

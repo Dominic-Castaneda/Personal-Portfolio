@@ -18,7 +18,7 @@ const projects = [
     thumbnail: "/images/trading-sim.jpg",
     category: "Full Stack Development",
     languages: ["HTML", "CSS", "JavaScript"],
-    progress: 65,
+    progress: 40,
     fullDescription: "A stock trading simulator using historical data to teach users manual trading strategies.",
     githubLink: "https://github.com/your-profile/trading-simulator",
     additionalImages: ["/images/trading-sim-extra-1.jpg", "/images/trading-sim-extra-2.jpg"]

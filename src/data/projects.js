@@ -3,13 +3,13 @@ const projects = [
     id: 6,
     title: "Personal Portfolio",
     description: "Personal Portfolio Website",
-    thumbnail: "/images/black.jpg",
+    thumbnail: "/images/Portfolio.jpg",
     category: "Front End",
     languages: ["HTML", "CSS", "JavaScript"],
-    progress: 95,
+    progress: 100,
     fullDescription: "",
     githubLink: "https://github.com/Dominic-Castaneda/Personal-Portfolio.git",
-    additionalImages: ["/images/black.jpg"]
+    additionalImages: ["/images/Portfolio2.jpg"]
   },
   {
     id: 5,

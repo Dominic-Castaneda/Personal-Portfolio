@@ -164,8 +164,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .image-popup-content {
   position: relative;
-  max-width: 50%;
-  max-height: 70%;
+  max-width: 50vw; /* Adjusts width relative to the viewport */
+  max-height: 70vh;
 }
 
 .image-popup-content img {
@@ -183,6 +183,11 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
+}
+
+.image-popup-content img.landscape {
+  max-width: 80%; /* Make horizontal images smaller */
+  max-height: 60%; /* Ensure it doesn’t exceed viewport */
 }
 
 /* Project Grid Section */

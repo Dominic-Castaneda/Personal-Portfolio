@@ -12,20 +12,28 @@ const GetToKnowMe = () => {
     setPopupImage(null);
   };
 
+  // Define captions for each image
+  const images = [
+    { src: '/images/church.JPG', caption: 'Orthodox' },
+    { src: '/images/bee-frames.jpg', caption: 'Beekeeping' },
+    { src: '/images/Mak.jpg', caption: 'Macedonian' },
+    { src: '/images/tennis.jpg', caption: 'Sports' },
+  ];
+
   return (
     <div className="get-to-know-me">
       <h2>Get to Know Me</h2>
-      <p>Here are some glimpses of my life beyond coding. These pictures capture my hobbies, travels, and special moments that are important to me.</p>
+      <p>Here are some glimpses of my life beyond projects. These pictures are threads that weave together the person I am.</p>
       <div className="pictures-row">
-        {['/images/bee-frames.jpg', '/images/bee-frames.jpg', '/images/bee-frames.jpg', '/images/bee-frames.jpg'].map((src, index) => (
+        {images.map((image, index) => (
           <div key={index} className="get-to-know-me-image-wrapper">
             <img
-              src={src}
-              alt={`Hobby ${index + 1}`}
+              src={image.src}
+              alt={image.caption}
               className="get-to-know-me-image"
-              onClick={() => openPopup(src)}
+              onClick={() => openPopup(image.src)}
             />
-            <p className="image-caption">Hobby {index + 1}</p>
+            <p className="image-caption">{image.caption}</p>
           </div>
         ))}
       </div>

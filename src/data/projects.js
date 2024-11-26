@@ -33,7 +33,6 @@ const projects = [
     progress: 100,
     fullDescription: "A Unity 3D Casino Game with interactive slot machines and black jack.",
     githubLink: "https://github.com/your-profile/card-shuffler",
-    liveLink: "/Casino-Game/index.html",
     additionalImages: ["/images/casino-game2.jpg"]
   },
   {

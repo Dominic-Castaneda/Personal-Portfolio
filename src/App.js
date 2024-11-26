@@ -25,20 +25,6 @@ function App() {
         />
         {/* Project Details Page */}
         <Route path="/project/:id" element={<ProjectPage />} />
-
-        {/* Casino Game Page */}
-        <Route
-          path="/Casino-Game"
-          element={
-            <iframe
-              src="/Casino-Game/index.html" // Directs to the hosted game
-              width="100%"
-              height="100%"
-              style={{ border: 'none', height: '100vh' }}
-              title="Casino Game"
-            />
-          }
-        />
       </Routes>
     </div>
   );

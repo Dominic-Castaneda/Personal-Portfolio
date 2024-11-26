@@ -25,14 +25,15 @@ const projects = [
   },
   {
     id: 4,
-    title: "Unity Casino Game",
-    description: "3D Casino Game",
+    title: "Casino Game",
+    description: "Unity 3D Casino Game",
     thumbnail: "/images/casino-game.jpg",
     category: "Game Development",
     languages: ["C#"],
-    progress: 80,
-    fullDescription: "",
+    progress: 100,
+    fullDescription: "A Unity 3D Casino Game with interactive slot machines and black jack.",
     githubLink: "https://github.com/your-profile/card-shuffler",
+    liveLink: "/Casino-Game/index.html",
     additionalImages: ["/images/casino-game2.jpg"]
   },
   {
@@ -61,8 +62,8 @@ const projects = [
   },
   {
     id: 1,
-    title: "ESP32 Communication System",
-    description: "One Way Communication System to Get Notified When Needed",
+    title: "Communication System",
+    description: "ESP32 One Way Communication System to Get Notified When Needed",
     thumbnail: "/images/ESP32.jpg",
     category: "Back End",
     languages: ["C++"],

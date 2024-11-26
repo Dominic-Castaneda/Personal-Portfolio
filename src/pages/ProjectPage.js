@@ -27,6 +27,16 @@ const ProjectPage = () => {
         <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
           View on GitHub
         </a>
+        {project.liveLink && (
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="play-now-button"
+          >
+            Play Now
+          </a>
+        )}
       </div>
     </div>
   );

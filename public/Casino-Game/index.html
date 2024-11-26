@@ -51,14 +51,14 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/2310.loader.js";
+      var buildUrl = "/Casino-Game/Build"; // If deployed under /Casino-Game
+      var loaderUrl = buildUrl + "/Casino-Game.loader.js";
       var config = {
-        arguments: [],
-        dataUrl: buildUrl + "/2310.data.br",
-        frameworkUrl: buildUrl + "/2310.framework.js.br",
-        codeUrl: buildUrl + "/2310.wasm.br",
-        streamingAssetsUrl: "StreamingAssets",
+        dataUrl: buildUrl + "/Casino-Game.data.br",
+        frameworkUrl: buildUrl + "/Casino-Game.framework.js.br",
+        codeUrl: buildUrl + "/Casino-Game.wasm.br",
+        streamingAssetsUrl: "/Casino-Game/StreamingAssets",
+        decompressionFallback: true,
         companyName: "DefaultCompany",
         productName: "Oakland Casino",
         productVersion: "0.1.0",

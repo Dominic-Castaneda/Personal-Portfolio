@@ -40,9 +40,14 @@ body::-webkit-scrollbar-thumb:hover {
 .profile-section {
   display: flex;
   align-items: center;
-  margin: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin: 4rem 2rem 6rem 2rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
 }
 
 .profile-left {
@@ -50,42 +55,91 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 
-.profile-right {
-  flex: 2;
-  padding-left: 2rem;
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #bb86fc;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.4);
 }
 
-.profile-photo {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.profile-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.profile-right p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.inline-icon {
+  color: #bb86fc;
+  margin-right: 0.3rem;
 }
 
 .resume-download {
   margin-top: 1rem;
   display: inline-block;
-  color: #bb86fc;
+  padding: 0.6rem 1.2rem;
+  margin-right: 40rem;
+  text-align: center;
+  background-color: #bb86fc;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .resume-download:hover {
-  color: #e0e0e0;
+  background-color: #a56dfc;
+  color: #ffffff;
 }
 
 .contact-info {
   margin-top: 1rem;
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .contact-icon {
+  font-size: 1.8rem;
   color: #bb86fc;
-  transition: color 0.2s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .contact-icon:hover {
-  color: #e0e0e0;
+  transform: scale(1.2);
+  color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-right {
+    align-items: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+  }
+}
+
 
 /* Get to Know Me Section */
 .get-to-know-me {
@@ -297,52 +351,131 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Project Page Pop-Up */
-.project-popup {
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  background-color: #1f1f1f;
-  padding: 3rem;
+.project-blog {
+  width: 100%;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1a1a1a;
   border-radius: 12px;
-  width: 90%;
-  max-width: 1100px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-  z-index: 1000;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.project-content {
-  position: relative;
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.back-button {
+.blog-back-button {
+  display: flex;
+  align-items: center;
   background: none;
   color: #bb86fc;
   border: none;
-  cursor: pointer;
   font-size: 1rem;
-  display: flex;
+  cursor: pointer;
+}
+
+.blog-back-button:hover {
+  color: #ffffff;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.blog-cover-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.blog-meta {
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.blog-github-link {
+  display: inline-flex;
   align-items: center;
-  margin-bottom: 1rem;
-}
-
-.back-button:hover {
-  color: #e0e0e0;
-}
-
-.project-image-small {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.additional-image {
-  width: 100%;
-  max-width: 300px;
+  gap: 0.5rem;
   margin-top: 1rem;
-  border-radius: 8px;
+  background-color: #bb86fc;
+  color: #121212;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
+
+.blog-github-link:hover {
+  background-color: #a56dfc;
+  color: #fff;
+}
+
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin-top: 1rem;
+}
+
+.blog-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.blog-gallery-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.blog-section {
+  margin-top: 2rem;
+}
+
+.blog-section h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #bb86fc;
+  padding-left: 0.75rem;
+}
+
+.blog-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d0d0d0;
+  margin-top: 0.5rem;
+}
+
+.blog-inline-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog-inline-image:hover {
+  transform: scale(1.02);
+}
+
 
 /* Footer */
 .footer {

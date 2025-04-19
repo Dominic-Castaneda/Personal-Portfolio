@@ -12,7 +12,6 @@ const GetToKnowMe = () => {
     setPopupImage(null);
   };
 
-  // Define captions for each image
   const images = [
     { src: '/images/church.JPG', caption: 'Orthodox' },
     { src: '/images/bee-frames.jpg', caption: 'Beekeeping' },

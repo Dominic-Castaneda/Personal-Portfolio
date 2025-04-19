@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-import projects from '../data/projects'; // Assume projects data includes category and languages
+import projects from '../data/projects';
 
 const ProjectGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedLanguage, setSelectedLanguage] = useState('All');
 
-  const categories = ['All', 'Full Stack Development', 'Front End', 'Back End', 'Game Development', 'AI', 'Automation', "Robotic's"];
-  const languages = ['All', 'HTML', 'CSS', 'JavaScript', 'Python', 'Java', 'C#', 'C++', 'Ladder Logic', 'CAD'];
+  const categories = ['All', 'Full Stack', 'Front End', 'Back End', 'Game Development', 'Automation', "Robotic's", "Engineering"];
+  const languages = ['All', 'HTML', 'CSS', 'JavaScript', 'JavaScript XML', 'Python', 'Java', 'C#', 'C++', 'Ladder Logic', 'CAD'];
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);

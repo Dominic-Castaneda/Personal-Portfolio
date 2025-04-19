@@ -1,5 +1,105 @@
 const projects = [
   {
+    id: 8,
+    title: "Life Organizer Hub",
+    description: "All-in-One Personal Dashboard App",
+    thumbnail: "/images/",
+    category: "Full Stack",
+    languages: ["JavaScript XML"],
+    progress: 1,
+    githubLink: "",
+    additionalImages: [],
+    sections: [
+      {
+        heading: "Project Goal",
+        body: "Life Organizer Hub is an all-in-one productivity system designed to help me manage everything in one place. For example, tasks and schedules to health metrics and finances. It will live on my TV (via Raspberry Pi) as a daily visual hub, while also being remotely accessible from my phone."
+      },
+      {
+        heading: "Core Features",
+        body: "The app will include a to-do list, goal board, bedtime reminders, live weather, spending logs, financial tracking, and more."
+      },
+      {
+        heading: "Technology Plan",
+        body: "The frontend will be built in React Native Web, and displayed via Chromium or kiosk-mode browser on a Raspberry Pi. Data will be stored in Supabase with real-time syncing, and personal metrics will be accessed from secure APIs.",
+      },
+      {
+        heading: "Display Strategy",
+        body: "On the TV, the app will operate like a clean daily dashboard. On mobile, it will have touch-friendly controls for quick updates or reminders. I’ll use GitHub for version control and possibly deploy using Netlify.",
+      },
+      {
+        heading: "What This Represents",
+        body: "This project combines organization, discipline, and tech in a daily tool to build habits and stay focused. It reflects my drive to optimize my environment through engineering and self-improvement."
+      }
+    ]
+  },
+  {
+    id: 7,
+    title: "Langstroth 2.0",
+    description: "An Update to Beekeeping",
+    thumbnail: "/images/beehive-thumbnail.jpg",
+    category: "Engineering",
+    languages: ["CAD"],
+    progress: 1,
+    githubLink: "",
+    additionalImages: [],
+    sections: [
+      {
+        heading: "Vision",
+        body: "Langstroth 2.0 is a long-term engineering project to create a next-generation beehive that maximizes insulation, structural efficiency, and bee health. This is both a practical beekeeping project and a technical showcase of CAD design, embedded monitoring, and sustainability thinking."
+      },
+      {
+        heading: "Materials & Construction",
+        body: "The outer shell will be 3D-printed using ASA for weather resistance, and internal insulation will likely involve polyiso foam or other high R-value materials. Inner surfaces may be lined with natural wood to maintain a healthy microclimate for the bees."
+      },
+      {
+        heading: "Planned Features",
+        body: "The design includes modular boxes with slanted walls for thermal regulation, a ventilated bottom board, and potential smart monitoring add-ons like humidity sensors, weight sensors, and temperature tracking — all powered by embedded microcontrollers.",
+      },
+      {
+        heading: "Progress",
+        body: "The project is in its earliest design stage. CAD sketches have begun for the modular outer structure, and materials are being researched for durability, efficiency, and bee-friendliness. Updates will be posted as prototyping begins.",
+      },
+      {
+        heading: "Why This Project Matters",
+        body: "This project combines my passion for beekeeping with my engineering background. It's a real-world application of environmental design, 3D modeling, and embedded systems — and I hope it can serve as a proof-of-concept for sustainable hive innovation."
+      }
+    ]
+  },  
+  {
+    id: 6,
+    title: "API Weather App",
+    description: "Live Weather App with City Search & Forecast",
+    thumbnail: "/images/smartweather-thumbnail.jpg",
+    category: "Full Stack",
+    languages: ["JavaScript https://github.com/Dominic-Castaneda/Weather-App.git"],
+    progress: 100,
+    githubLink: "https://github.com/Dominic-Castaneda/smartweather-app",
+    additionalImages: ["/images/smartweather-ui.jpg", "/images/smartweather-forecast.jpg"],
+    sections: [
+      {
+        heading: "Overview",
+        body: "SmartWeather is a mobile weather application that gives users real-time temperature updates, 7-day forecasts, and a live map for any city in the world. The app is designed to be clean, fast, and intuitive."
+      },
+      {
+        heading: "Tech Stack",
+        body: "Built using React Native with Expo, it connects to the OpenWeather API for geo, current, and forecasted weather data. Supabase is used to store saved city data and manage auto-refresh logic across sessions."
+      },
+      {
+        heading: "Features",
+        body: "Users can search for cities with live autocomplete, tap to save them, and view the forecast or map by clicking on any saved city. Weather data auto-refreshes every 60 seconds, and cities persist even after closing the app using AsyncStorage.",
+        image: "/images/smartweather-ui.jpg"
+      },
+      {
+        heading: "Challenges",
+        body: "Handling frequent API updates, managing state across multiple screens, and timing fetch intervals without causing race conditions were all major challenges. I also implemented error fallback and persistent storage without external libraries."
+      },
+      {
+        heading: "What I Learned",
+        body: "This project strengthened my understanding of API integration, real-time UI updates, and React Native state management. It helped me build production-ready mobile architecture and clean UI patterns."
+      }
+    ]
+  },  
+  {
     id: 5,
     title: "Personal Portfolio",
     description: "Personal Portfolio Website",
@@ -37,8 +137,8 @@ const projects = [
     category: "Game Development",
     languages: ["C#"],
     progress: 100,
-    githubLink: "",
-    additionalImages: [],
+    githubLink: "https://github.com/Dominic-Castaneda/Casino-Simulation-Game.git",
+    additionalImages: ["/images/Unity.png", "/images/blackjacktable.png"],
     sections: [
       {
         heading: "Overview",
@@ -128,7 +228,7 @@ const projects = [
       },
       {
         heading: "What I Learned",
-        body: "This was one of my first hands-on PLC projects, and it taught me how to think like a technician — wiring relays, assigning inputs/outputs, and debugging real-world electromechanical behavior. It also gave me confidence in troubleshooting circuits under pressure."
+        body: "This was one of my first hands-on PLC projects, and it taught me how to think like a technician. Such as wiring relays, assigning inputs/outputs, and debugging real-world electromechanical behavior. It also gave me confidence in troubleshooting circuits under pressure."
       }
     ]
   },  

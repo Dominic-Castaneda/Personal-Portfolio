@@ -78,7 +78,7 @@ const projects = [
     sections: [
       {
         heading: "Overview",
-        body: "SmartWeather is a mobile weather application that gives users real-time temperature updates, 7-day forecasts, and a live map for any city in the world. The app is designed to be clean, fast, and intuitive."
+        body: "SmartWeather is a web and mobile weather application that gives users real-time temperature updates, 10-day forecasts, and a live map for any city in the world. The app is designed to be clean, fast, and intuitive."
       },
       {
         heading: "Tech Stack",

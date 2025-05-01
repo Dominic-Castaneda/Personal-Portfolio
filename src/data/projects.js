@@ -87,7 +87,7 @@ const projects = [
       {
         heading: "Features",
         body: "Users can search for cities with live autocomplete, tap to save them, and view the forecast or map by clicking on any saved city. Weather data auto-refreshes every 60 seconds, and cities persist even after closing the app using AsyncStorage.",
-        image: "/images/smartweather-ui.jpg"
+        image: "/images/Web4.jpg"
       },
       {
         heading: "Challenges",

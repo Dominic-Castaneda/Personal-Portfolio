@@ -69,12 +69,12 @@ const projects = [
     id: 6,
     title: "API Weather App",
     description: "Live Weather App with City Search & Forecast",
-    thumbnail: "/images/smartweather-thumbnail.jpg",
+    thumbnail: "/images/Web2.jpg",
     category: "Full Stack",
     languages: ["JavaScript"],
     progress: 100,
     githubLink: "https://github.com/Dominic-Castaneda/API-Weather-App.git",
-    additionalImages: ["/images/smartweather-ui.jpg", "/images/smartweather-forecast.jpg"],
+    additionalImages: ["/images/Web1.jpg", "/images/web2.jpg", "/images/web3.jpg", "/images/Mobile1.PNG", "/images/Mobile2.PNG", "/images/Mobile3.PNG"],
     sections: [
       {
         heading: "Overview",

@@ -1,5 +1,96 @@
 const projects = [
   {
+    id: 11,
+    title: "Automated Poker Dealer",
+    description: "Machine Vision Dealer with Win Probabilities",
+    thumbnail: "/images/poker-dealer-thumbnail.jpg",
+    category: "AI + Robotics",
+    languages: ["Python", "OpenCV", "C++"],
+    progress: 1,
+    githubLink: "",
+    additionalImages: [],
+    sections: [
+      {
+        heading: "Concept",
+        body: "A poker dealer system using machine vision to identify cards on the table, calculate player win odds, and determine the winner like TV-style poker tables."
+      },
+      {
+        heading: "Technology Plan",
+        body: "OpenCV handles card recognition, with Python logic for probability calculation. An optional Arduino or robotic component could handle card dealing or light signaling."
+      },
+      {
+        heading: "Why It Matters",
+        body: "It eliminates the need for manual dealers during home games while keeping fairness and automation. It’s designed for real use by my friends and me."
+      },
+      {
+        heading: "Vision",
+        body: "Eventually, the dealer could be fully autonomous, voice-interactive, and store hand histories to track trends and decisions."
+      }
+    ]
+  },
+  {
+    id: 10,
+    title: "Robotic Assembly Line",
+    description: "Mini Smart Factory with SQL Logging",
+    thumbnail: "/images/assembly-line-thumbnail.jpg",
+    category: "Automation",
+    languages: ["Python", "SQL"],
+    progress: 1,
+    githubLink: "",
+    additionalImages: [],
+    sections: [
+      {
+        heading: "System Overview",
+        body: "This project simulates a small-scale robotic assembly line using a conveyor, sensors, and a robot arm. The system will detect and interact with objects, logging each action to a SQL database."
+      },
+      {
+        heading: "Features",
+        body: "Sensors detect objects on the conveyor, a robotic arm performs pick-and-place operations, and Python scripts handle real-time SQL logging for item data, timestamps, and errors."
+      },
+      {
+        heading: "Tools and Tech",
+        body: "PLC or Arduino for motion logic, Python for backend logging, and optional UI for real-time process monitoring."
+      },
+      {
+        heading: "Project Value",
+        body: "This combines robotics, industrial controls, and backend development into one project—demonstrating full-stack automation integration."
+      }
+    ]
+  },
+  {
+    id: 9,
+    title: "Langstroth 2.0",
+    description: "An Update to Beekeeping",
+    thumbnail: "/images/beehive-thumbnail.jpg",
+    category: "Engineering",
+    languages: ["CAD"],
+    progress: 1,
+    githubLink: "",
+    additionalImages: [],
+    sections: [
+      {
+        heading: "Vision",
+        body: "Langstroth 2.0 is a long-term engineering project to create a next-generation beehive that maximizes insulation, structural efficiency, and bee health. This is both a practical beekeeping project and a technical showcase of CAD design, embedded monitoring, and sustainability thinking."
+      },
+      {
+        heading: "Materials & Construction",
+        body: "The outer shell will be 3D-printed using ASA for weather resistance, and internal insulation will likely involve polyiso foam or other high R-value materials. Inner surfaces may be lined with natural wood to maintain a healthy microclimate for the bees."
+      },
+      {
+        heading: "Planned Features",
+        body: "The design includes modular boxes with slanted walls for thermal regulation, a ventilated bottom board, and potential smart monitoring add-ons like humidity sensors, weight sensors, and temperature tracking — all powered by embedded microcontrollers.",
+      },
+      {
+        heading: "Progress",
+        body: "The project is in its earliest design stage. CAD sketches have begun for the modular outer structure, and materials are being researched for durability, efficiency, and bee-friendliness. Updates will be posted as prototyping begins.",
+      },
+      {
+        heading: "Why This Project Matters",
+        body: "This project combines my passion for beekeeping with my engineering background. It's a real-world application of environmental design, 3D modeling, and embedded systems — and I hope it can serve as a proof-of-concept for sustainable hive innovation."
+      }
+    ]
+  },
+  {
     id: 8,
     title: "Life Organizer Hub",
     description: "All-in-One Personal Dashboard App",
@@ -34,37 +125,33 @@ const projects = [
   },
   {
     id: 7,
-    title: "Langstroth 2.0",
-    description: "An Update to Beekeeping",
-    thumbnail: "/images/beehive-thumbnail.jpg",
-    category: "Engineering",
-    languages: ["CAD"],
-    progress: 1,
+    title: "Portfolio v2",
+    description: "Modern Rebuild of My Developer Portfolio",
+    thumbnail: "/images/portfolio2-thumbnail.jpg",
+    category: "Front End",
+    languages: ["Next.js", "Tailwind CSS"],
+    progress: 5,
     githubLink: "",
     additionalImages: [],
     sections: [
       {
-        heading: "Vision",
-        body: "Langstroth 2.0 is a long-term engineering project to create a next-generation beehive that maximizes insulation, structural efficiency, and bee health. This is both a practical beekeeping project and a technical showcase of CAD design, embedded monitoring, and sustainability thinking."
+        heading: "Project Purpose",
+        body: "This project is a full redesign and rebuild of my personal portfolio using Next.js and Tailwind CSS. It aims to better showcase my technical projects with dynamic routing, modern UI, and responsive layout."
       },
       {
-        heading: "Materials & Construction",
-        body: "The outer shell will be 3D-printed using ASA for weather resistance, and internal insulation will likely involve polyiso foam or other high R-value materials. Inner surfaces may be lined with natural wood to maintain a healthy microclimate for the bees."
+        heading: "Technology Stack",
+        body: "Built with Next.js for SEO and routing, styled with Tailwind CSS, and deployed via Netlify. The site features dark mode, category filtering, and optimized performance."
       },
       {
-        heading: "Planned Features",
-        body: "The design includes modular boxes with slanted walls for thermal regulation, a ventilated bottom board, and potential smart monitoring add-ons like humidity sensors, weight sensors, and temperature tracking — all powered by embedded microcontrollers.",
+        heading: "Improvements Over v1",
+        body: "Unlike my original HTML/CSS site, this version uses reusable components, structured project data, and allows easy future updates."
       },
       {
-        heading: "Progress",
-        body: "The project is in its earliest design stage. CAD sketches have begun for the modular outer structure, and materials are being researched for durability, efficiency, and bee-friendliness. Updates will be posted as prototyping begins.",
-      },
-      {
-        heading: "Why This Project Matters",
-        body: "This project combines my passion for beekeeping with my engineering background. It's a real-world application of environmental design, 3D modeling, and embedded systems — and I hope it can serve as a proof-of-concept for sustainable hive innovation."
+        heading: "Goals",
+        body: "To create a portfolio that reflects my growth in frontend development and gives employers a professional first impression."
       }
     ]
-  },  
+  },
   {
     id: 6,
     title: "API Weather App",
